@@ -1,0 +1,46 @@
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  text-transform: capitalize;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+}
+
+.flex {
+  justify-content: space-around;
+  display: flex;
+  width: 100%;
+  padding: 2em;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.large-text {
+  font-size: 10em;
+}
+
+.text-white {
+  color: white;
+}
