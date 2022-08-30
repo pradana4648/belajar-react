@@ -23,7 +23,8 @@ li {
 }
 
 .flex {
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   display: flex;
   width: 100%;
   padding: 2em;

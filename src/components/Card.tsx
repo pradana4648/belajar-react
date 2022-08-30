@@ -1,10 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 interface ICardProps {
   children?: React.ReactNode;
 }
 
 const Card: React.FC<ICardProps> = ({ children }) => {
+  const navigate = useNavigate();
   const [focus, setFocus] = React.useState({
     hover: false,
     transform: false,
@@ -29,6 +31,7 @@ const Card: React.FC<ICardProps> = ({ children }) => {
   const onClick = React.useCallback(
     (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
       setFocus((state) => ({ ...state, transform: !state.transform }));
+      navigate(`/bikin-api`);
     },
     [focus.transform]
   );
